@@ -36,6 +36,11 @@ AVAILABLE ENDPOINTS
 | `PUT`              | `/users/:id`     | updates an already created user in the DB (object user to be includued in request's body)      |
 | `DELETE`           | `/users/:id`     | deletes a user from the DB (JWT token user ID must be the same as the user you want to delete) |
 
+| `GET`              | `/users/:id/books`          | returns the collection of books by user present in the DB                                                                  |
+| `POST`             | `/users/:id/books`          | creates a books of user in the DB (object book to be includued in request's body)                                                               |
+| `PUT`              | `/users/:id/books/:bookId`  | updates an already created a books of user in the DB (object book to be includued in request's body)                                                               |
+| `DELETE`           | `/users/:id/books/:bookId`  | deletes a books of user in the DB                                                             |
+
 
 ## Pre-reqs
 To build and run this app locally you will need:
